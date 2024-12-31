@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohi's Roblox Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Rohi's Portfolio</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Building immersive experiences & efficient scripts for Roblox</h2>
+        <p>Creating seamless environments and functionality in Roblox Studio</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Scripting:</strong> Lua expertise for dynamic gameplay and UI.</li>
+            <li><strong>Building:</strong> Aesthetic and functional game environments.</li>
+            <li><strong>UI/UX Design:</strong> User-friendly interfaces to enhance engagement.</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>AlwaysFaceTag Script</h3>
+            <p>A custom script ensuring parts dynamically face players.</p>
+        </div>
+        <div class="project">
+            <h3>RNG Game Concept</h3>
+            <p>A minimal-resource game focused on UI-driven RNG mechanics.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Rohi's Roblox Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
