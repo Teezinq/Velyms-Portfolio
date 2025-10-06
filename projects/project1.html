@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
+  <!-- Minimal header -->
   <header class="site-header">
     <a href="../index.html" class="logo">ROHI</a>
     <nav class="site-nav">
@@ -16,51 +17,48 @@
   </header>
 
   <main>
-    <!-- Project Hero -->
-    <section class="section hero fade">
+    <!-- Title -->
+    <section class="section hero fade" style="min-height:auto; padding:60px 24px 30px;">
       <div class="container hero-inner">
-        <h1 class="hero-title">Project One</h1>
-        <p class="hero-tagline">Short summary of what this project is about.</p>
+        <h1 class="hero-title" style="font-size:clamp(40px,8vw,80px);">Project 1</h1>
       </div>
     </section>
 
-    <!-- Overview -->
-    <section class="section about fade">
-      <div class="container narrow">
-        <h2 class="section-title">Overview</h2>
-        <p class="lead">
-          Describe what the project does, why you built it, and what problem it solves.
-        </p>
-      </div>
-    </section>
-
-    <!-- Process -->
-    <section class="section fade">
-      <div class="container narrow">
-        <h2 class="section-title">Process</h2>
-        <p class="lead">
-          Talk about the planning, design, and code side — how you approached it, tools used, etc.
-        </p>
-      </div>
-    </section>
-
-    <!-- Gallery -->
-    <section class="section projects fade">
+    <!-- Hero media placeholder -->
+    <section class="section fade" style="padding-top:0;">
       <div class="container">
-        <h2 class="section-title">Gallery</h2>
-        <div class="grid">
-          <div class="card">
-            <div class="thumb" style="background-image:url('../images/example1.jpg')"></div>
-            <div class="card-meta">
-              <p>Screenshot or highlight.</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="thumb" style="background-image:url('../images/example2.jpg')"></div>
-            <div class="card-meta">
-              <p>Another view or feature.</p>
-            </div>
-          </div>
+        <div class="project-hero"></div>
+      </div>
+    </section>
+
+    <!-- First content pair: text left / image right -->
+    <section class="section fade alt-section">
+      <div class="container split">
+        <div class="split-text">
+          <h2 class="section-title">Overview</h2>
+          <p class="lead">
+            This project explored how simplicity can be combined with strong layout and motion.
+            The goal was to create a clear, minimal interface that feels effortless.
+          </p>
+        </div>
+        <div class="split-media">
+          <div class="media-box"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Second content pair: image left / text right -->
+    <section class="section fade alt-section reverse">
+      <div class="container split">
+        <div class="split-media">
+          <div class="media-box"></div>
+        </div>
+        <div class="split-text">
+          <h2 class="section-title">Process</h2>
+          <p class="lead">
+            Planning and execution involved sketches, modular code, and visual hierarchy testing.
+            I focused on clarity and cognitive ease — reducing noise while keeping personality.
+          </p>
         </div>
       </div>
     </section>
@@ -70,7 +68,8 @@
       <div class="container narrow">
         <h2 class="section-title">Reflection</h2>
         <p class="lead">
-          What you learned, what you’d do differently next time, and any technical challenges.
+          This project taught me the value of restraint — that design communicates best
+          when you remove everything unnecessary. The result is not emptiness but focus.
         </p>
       </div>
     </section>
