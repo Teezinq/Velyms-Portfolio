@@ -165,3 +165,34 @@ body{
   .btn:hover, .card:hover .thumb, .card:hover{ transform:none; }
   .fade, .revealed{ opacity:1; transform:none; transition:none; }
 }
+
+/* Project pages */
+.project-hero{
+  width:100%;
+  aspect-ratio: 16/9;
+  background:#141414;
+  border:1px solid var(--line);
+  border-radius:16px;
+}
+
+/* Split layout for alternating text/media */
+.split{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:40px;
+  align-items:center;
+}
+.split-text h2{ margin-bottom:12px; }
+.media-box{
+  width:100%;
+  aspect-ratio: 4/3;
+  background:#1b1b1b;
+  border:1px solid var(--line);
+  border-radius:16px;
+}
+@media(min-width:800px){
+  .split{ grid-template-columns: repeat(2,1fr); }
+  .reverse .split-text{ order:2; }
+  .reverse .split-media{ order:1; }
+}
+.alt-section{ background:#0f0f0f; border:none; }
