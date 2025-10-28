@@ -3,109 +3,198 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rohi — Portfolio</title>
+  <title>Rohi — Abstract Portfolio</title>
 
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
   <meta name="color-scheme" content="light dark">
 </head>
 <body>
-  <!-- Fixed minimal header -->
   <header class="site-header">
-    <a href="#top" class="logo" aria-label="Go to top">ROHI</a>
+    <a href="#top" class="logo" aria-label="Return to top">ROHI</a>
     <nav class="site-nav" aria-label="Primary">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="#pulse">Pulse</a>
+      <a href="#vibrations">Vibrations</a>
+      <a href="#artifacts">Artifacts</a>
+      <a href="#signal">Signal</a>
     </nav>
   </header>
 
   <main id="top">
-    <!-- HERO -->
-    <section class="section hero fade" aria-label="Introduction">
-      <div class="container hero-inner">
-        <h1 class="hero-title">Rohi</h1>
-        <p class="hero-tagline">
-          Designer and developer. I build clear, fast and purposeful things.
+    <section class="section hero cosmic" aria-label="Introduction" data-reveal>
+      <div class="aurora" aria-hidden="true">
+        <div class="orb orb-one" data-depth="0.28"></div>
+        <div class="orb orb-two" data-depth="-0.18"></div>
+        <div class="orb orb-three" data-depth="0.45"></div>
+        <div class="orb orb-four" data-depth="-0.32"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-kicker">Experimental Interface Author</p>
+        <h1 class="hero-title">I conjure surreal digital habitats that feel alive, mischievous, and kind.</h1>
+        <p class="hero-subtitle">
+          Rohi is a designer-engineer hybrid crafting peculiar interactive systems where logic bends into lucid dreams.
         </p>
-        <div class="hero-cta">
-          <a class="btn" href="#projects">See Work</a>
-          <a class="btn btn-ghost" href="#contact">Contact</a>
+        <div class="hero-actions">
+          <a class="btn" href="#artifacts">Step into the gallery</a>
+          <a class="btn btn-ghost" href="#signal">Transmit a signal</a>
         </div>
       </div>
-      <div class="scroll-indicator" aria-hidden="true">Scroll</div>
+      <div class="hero-scroll" aria-hidden="true">descend ↓</div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section about fade" aria-label="About">
-      <div class="container narrow">
-        <h2 class="section-title">About</h2>
-        <p class="lead">
-          I like quiet interfaces and strong function. Monochrome first. Motion used with intention.
-          I focus on web builds and interactive experiments.
-        </p>
+    <section class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        Flux in progress • Micro-motions • Emotional code • Elastic accessibility • Ambient worlds •
+        Flux in progress • Micro-motions • Emotional code • Elastic accessibility • Ambient worlds •
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section projects fade" aria-label="Highlighted projects">
+    <section id="pulse" class="section pulse" aria-label="Pulse" data-reveal>
       <div class="container">
-        <h2 class="section-title">Projects</h2>
+        <div class="pulse-grid">
+          <div class="pulse-copy">
+            <p class="eyebrow">Pulse</p>
+            <h2>Quiet rebellion through pixel rituals.</h2>
+            <p>
+              Each interface begins as a soundless pulse, a hunch inside a sketchbook. I stretch it into
+              responsive circuits that shimmer with color, texture, and meaningful accessibility.
+            </p>
+            <p>
+              My work merges concept art energy with engineering discipline. Dreamy visuals meet precise code,
+              resulting in tools that feel like art installations yet behave impeccably across devices.
+            </p>
+          </div>
+          <ul class="pulse-list" aria-label="Signals of practice">
+            <li>
+              <span class="pulse-label">Frequencies</span>
+              <span class="pulse-value">Elastic design systems, responsive rituals, cosmic typography.</span>
+            </li>
+            <li>
+              <span class="pulse-label">Materials</span>
+              <span class="pulse-value">WebGL whispers, CSS gradients, story-driven prototyping.</span>
+            </li>
+            <li>
+              <span class="pulse-label">Tempo</span>
+              <span class="pulse-value">Considered motion, inclusive pathways, purposeful experimentation.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-        <div class="grid">
-          <!-- Card 1 -->
-          <article class="card">
-            <a class="card-link" href="projects/project1.html">
-              <div class="thumb" data-thumb="one"></div>
-              <div class="card-meta">
-                <h3>Project One</h3>
-                <p>Interactive web build with smooth motion and crisp layout.</p>
-                <span class="arrow">View →</span>
+    <section id="vibrations" class="section vibrations" aria-label="Vibrations" data-reveal>
+      <div class="container">
+        <div class="section-intro">
+          <p class="eyebrow">Vibrations</p>
+          <h2>Capabilities that morph with every collaboration.</h2>
+          <p class="intro-copy">
+            Think of these as living instruments—tuned uniquely for each project, never resting in the same configuration twice.
+          </p>
+        </div>
+        <div class="frequency-grid" role="list">
+          <article class="frequency-card" role="listitem">
+            <h3>Dream Architecture</h3>
+            <p>Immersive product narratives, multi-sensory storyboards, liminal flows.</p>
+            <ul class="tag-cloud" aria-label="Dream architecture traits">
+              <li>systems poetry</li>
+              <li>immersive mapping</li>
+              <li>ritual UX</li>
+            </ul>
+          </article>
+          <article class="frequency-card" role="listitem">
+            <h3>Chromatic Engineering</h3>
+            <p>Delicate performance budgets, intricate CSS choreography, resilient accessibility.</p>
+            <ul class="tag-cloud" aria-label="Chromatic engineering traits">
+              <li>semantic fibers</li>
+              <li>motion curves</li>
+              <li>progressive enhancement</li>
+            </ul>
+          </article>
+          <article class="frequency-card" role="listitem">
+            <h3>Speculative Research</h3>
+            <p>Prototype theater, speculative canvases, collaborative provocations.</p>
+            <ul class="tag-cloud" aria-label="Speculative research traits">
+              <li>rapid rituals</li>
+              <li>ambient probes</li>
+              <li>field notes</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="artifacts" class="section artifacts" aria-label="Artifacts" data-reveal>
+      <div class="container">
+        <div class="section-intro">
+          <p class="eyebrow">Artifacts</p>
+          <h2>Portals into parallel product dimensions.</h2>
+          <p class="intro-copy">Select experiments stitched from sonic gradients, responsive physics, and narrative systems.</p>
+        </div>
+
+        <div class="artifact-grid">
+          <article class="artifact-card">
+            <a class="artifact-link" href="projects/project1.html">
+              <div class="artifact-visual" data-glitch="one" aria-hidden="true"></div>
+              <div class="artifact-meta">
+                <h3>Moonlit Supply</h3>
+                <p>Commerce experience shaped like moon phases, responsive to lunar cycles.</p>
+                <span class="artifact-cta">Enter</span>
               </div>
             </a>
           </article>
 
-          <!-- Card 2 -->
-          <article class="card">
-            <a class="card-link" href="#" aria-label="Open Project Two">
-              <div class="thumb" data-thumb="two"></div>
-              <div class="card-meta">
-                <h3>Project Two</h3>
-                <p>Minimal shop concept with clean flow and sharp typography.</p>
-                <span class="arrow">View →</span>
+          <article class="artifact-card">
+            <a class="artifact-link" href="#" aria-label="Open Chiaroscuro Atlas project">
+              <div class="artifact-visual" data-glitch="two" aria-hidden="true"></div>
+              <div class="artifact-meta">
+                <h3>Chiaroscuro Atlas</h3>
+                <p>Interactive editorial built with layered shadows and responsive ambient scoring.</p>
+                <span class="artifact-cta">Enter</span>
               </div>
             </a>
           </article>
 
-          <!-- Card 3 -->
-          <article class="card">
-            <a class="card-link" href="#" aria-label="Open Project Three">
-              <div class="thumb" data-thumb="three"></div>
-              <div class="card-meta">
-                <h3>Project Three</h3>
-                <p>Experimental canvas piece with subtle depth and input play.</p>
-                <span class="arrow">View →</span>
+          <article class="artifact-card">
+            <a class="artifact-link" href="#" aria-label="Open Soft Signal Observatory project">
+              <div class="artifact-visual" data-glitch="three" aria-hidden="true"></div>
+              <div class="artifact-meta">
+                <h3>Soft Signal Observatory</h3>
+                <p>Research hub with generative diagrams tuned to participant sentiment.</p>
+                <span class="artifact-cta">Enter</span>
               </div>
             </a>
           </article>
         </div>
 
         <div class="center">
-          <a class="btn btn-ghost" href="#" aria-label="See all projects">See all projects</a>
+          <a class="btn btn-ghost" href="#" aria-label="See all artifacts">See the archive</a>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section contact fade" aria-label="Contact">
-      <div class="container narrow">
-        <h2 class="section-title">Contact</h2>
-        <p class="lead">Open to work and collabs.</p>
+    <section class="section field-notes" data-reveal aria-label="Field notes">
+      <div class="container">
+        <div class="notes-wrap">
+          <p class="eyebrow">Field Notes</p>
+          <p class="notes-copy">
+            Currently mapping emergent tactile feedback for browsers, remixing daylight-inspired gradient systems,
+            and co-creating prototypes that listen as much as they speak.
+          </p>
+        </div>
+      </div>
+    </section>
 
-        <ul class="contact-list">
+    <section id="signal" class="section signal" aria-label="Contact" data-reveal>
+      <div class="container">
+        <div class="section-intro">
+          <p class="eyebrow">Signal</p>
+          <h2>Ready to build your next surreal interface?</h2>
+          <p class="intro-copy">Send a transmission and we will architect something alive together.</p>
+        </div>
+        <ul class="signal-list">
           <li><a href="mailto:you@example.com">you@example.com</a></li>
           <li><a href="https://github.com/teezing" target="_blank" rel="noreferrer">GitHub</a></li>
           <li><a href="https://x.com/" target="_blank" rel="noreferrer">X</a></li>
@@ -116,11 +205,10 @@
 
   <footer class="site-footer">
     <div class="container">
-      <small>© <span id="year"></span> Rohi. All rights reserved.</small>
+      <small>© <span id="year"></span> Rohi. Dream responsibly.</small>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
